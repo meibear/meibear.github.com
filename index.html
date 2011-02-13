@@ -1,11 +1,95 @@
+<!DOCTYPE HTML>
 <html>
-<body>
-Hey you
-<script src="http://static.getclicky.com/js" type="text/javascript"></script>
-<script type="text/javascript">try{ clicky.init(66385578); }catch(err){}</script>
+<head>
 
-<script>alert('hello')</script>
-</body>
+	<script type="text/javascript" src="audio-player.js"></script>  
+	<script type="text/javascript">  
+	AudioPlayer.setup("http://meibear.github.com/player.swf", {  
+		width: 290  
+	});  
+	</script>
+
+	<link  href="http://fonts.googleapis.com/css?family=Unkempt:regular" rel="stylesheet" type="text/css" >
+	<link  href="http://fonts.googleapis.com/css?family=Neucha:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+
+	<style>
+	.title {
+		font-family: 'Unkempt', serif;
+		font-size: 38px;
+		color: rgb(213,27,23);
+		font-style: normal;
+		font-weight: 400;
+		text-shadow: none;
+		text-decoration: none;
+		text-transform: none;
+		letter-spacing: 0em;
+		word-spacing: 0em;
+		line-height: 1.2;
+	}
+
+	.main {
+		font-family: 'Neucha', serif;
+		color: rgb(137,137,137);
+		font-size: 16px;
+		font-style: italic;
+		font-weight: 400;
+		text-shadow: none;
+		text-decoration: none;
+		text-transform: none;
+		letter-spacing: 0em;
+		word-spacing: 0em;
+		line-height: 1.2;
+	}
+
+	.box_shadow {
+		-moz-box-shadow: 0 0 3px 3px #DFDFDF;
+		-webkit-box-shadow: 0 0 3px 3px #DFDFDF;
+		box-shadow: 0 0 3px 3px #DFDFDF;
+	}
+	</style>
+
+</head>
+
+<body> 
+
+	<div class="box_shadow" style="margin: 0 auto; border: 1px solid rgb(192,192,192); margin: 20px 110px; min-width: 655px;">
+
+		<div class="title" style="text-align: center; margin: 30px 0">
+			Long Mei We Run
+		</div>
+
+		<div class="main" style="text-align: center; margin: 30px 0">
+			<div style="margin: 0 0 15px 0">
+				You're the reason I'm so hopelessly happy&nbsp;&nbsp;<span style="font-style: normal">: D</span>
+			</div>
+			<div style="margin: 0 0 15px 0">
+				I'm so thankful you are part of my life
+			</div>
+			<div style="margin: 0 0 15px 0">
+				I really hope we go the distance . . .
+			</div>
+		</div>
+
+		<div>
+		<p id="audioplayer_2">Alternative content</p>  
+		<script type="text/javascript">  
+		AudioPlayer.embed("audioplayer_2", {soundFile: "http://meibear.s3.amazonaws.com/Colbie%20Caillat%20-%20Falling%20For%20You.mp3"});  
+		</script>
+		</div>
+
+		<div style="text-align: center; margin: 20px 0 40px 0">
+			<img src="http://meibear.s3.amazonaws.com/mice_tin_cup.png">
+		</div>
+
+		<div style="text-align: center; font-family: helvetica; font-size: 10px; margin: 10px 0; color: #999">
+			from clippy with <span style="color: rgb(213,27,23)">&hearts;</span>
+		</div>
+
+	</div>
+
+	<script src="http://static.getclicky.com/js" type="text/javascript"></script> 
+	<script type="text/javascript">try{ clicky.init(66385578); }catch(err){}</script>
+
+</body> 
+
 </html>
-
-
