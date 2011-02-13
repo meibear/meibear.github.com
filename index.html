@@ -5,7 +5,22 @@
 	<script type="text/javascript" src="audio-player.js"></script>  
 	<script type="text/javascript">  
 	AudioPlayer.setup("http://meibear.github.com/player.swf", {  
-		width: 290  
+		width: 80,  
+		initialvolume: 100,  
+		transparentpagebg: "yes",  
+		left: "000000",  
+		lefticon: "EFEFEF",
+		noinfo: 'yes',
+		remaining: 'no',
+		animation: 'no',
+		transparentpagebg: 'yes',
+		leftbg: 'FFC7D2',
+		rightbg: 'EAABBD',
+		rightbghover: 'EAABBD',
+		righticonhover: '96596C',
+		lefticon: 'C5909D',
+		volslider: 'C5909D',
+		righticon: 'BA7A8C'
 	});  
 	</script>
 
@@ -46,6 +61,11 @@
 		-webkit-box-shadow: 0 0 3px 3px #DFDFDF;
 		box-shadow: 0 0 3px 3px #DFDFDF;
 	}
+
+	p.audioplayer_container {  
+		text-align: center;  
+	}
+
 	</style>
 
 </head>
@@ -59,25 +79,42 @@
 		</div>
 
 		<div class="main" style="text-align: center; margin: 30px 0">
-			<div style="margin: 0 0 15px 0">
+			<div style="margin: 0 0 12px 0">
 				You're the reason I'm so hopelessly happy&nbsp;&nbsp;<span style="font-style: normal">: D</span>
 			</div>
-			<div style="margin: 0 0 15px 0">
+			<div style="margin: 0 0 12px 0">
 				I'm so thankful you are part of my life
 			</div>
-			<div style="margin: 0 0 15px 0">
+			<div style="margin: 0 0 12px 0">
 				I really hope we go the distance . . .
 			</div>
 		</div>
 
-		<div>
-		<p id="audioplayer_2">Alternative content</p>  
-		<script type="text/javascript">  
-		AudioPlayer.embed("audioplayer_2", {soundFile: "http://meibear.s3.amazonaws.com/Colbie%20Caillat%20-%20Falling%20For%20You.mp3"});  
-		</script>
+
+		<div style="text-align: center; margin-top: 60px">
+			<img src="http://meibear.s3.amazonaws.com/cheesy_love_song.png">
 		</div>
 
-		<div style="text-align: center; margin: 20px 0 40px 0">
+		<div style="text-align: center;">	
+			<p id="audioplayer">Cheesy Love Song</p>  
+			<script type="text/javascript">  
+			AudioPlayer.embed("audioplayer", {
+				soundFile: "http://meibear.s3.amazonaws.com/Colbie%20Caillat%20-%20Falling%20For%20You.mp3",
+				titles: "Fallin' For You",  
+				artists: "Colbie Caillat"
+			});  
+			</script>
+		</div>
+		<div class="main" style="margin-top: 15px; text-align: center; font-size: 14px;">
+			or check out the cute video	
+		</div>
+		<div style="margin-top: 6px; text-align: center">
+			<a href="">
+				<img src="http://meibear.s3.amazonaws.com/video_icon.png" border="0" height="20px">
+			</a>
+		</div>
+
+		<div style="text-align: center; margin: 40px 0 40px 0">
 			<img src="http://meibear.s3.amazonaws.com/mice_tin_cup.png">
 		</div>
 
